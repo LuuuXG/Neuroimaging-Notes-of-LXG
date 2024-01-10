@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Neuroimaging Notes of LXG's documentation!
-=====================================================
+LXG的神经影像学习笔记
+====================
 
 .. toctree::
    :maxdepth: 2
