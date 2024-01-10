@@ -10,7 +10,7 @@ LXG的神经影像学习笔记
    :maxdepth: 2
    :caption: Contents:
 
-
+欢迎来到我的神经影像学习笔记！这份笔记记录了我的神经影像学习过程，希望对你有所帮助！
 
 Indices and tables
 ==================
@@ -18,3 +18,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
