@@ -57,5 +57,5 @@ SUBJECTS_DIR      /usr/local/freesurfer/7-dev/subjects
 MNI_DIR           /usr/local/freesurfer/7-dev/mni  
 FSL_DIR           /usr/local/fsl
 
-# Step 3：WMH-SynthSeg命令使用
+## Step 3：WMH-SynthSeg命令使用
 TODO
