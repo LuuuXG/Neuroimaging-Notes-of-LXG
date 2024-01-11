@@ -10,7 +10,7 @@ LXG的神经影像学习笔记
    :maxdepth: 2
    :caption: Contents:
 
-欢迎来到我的神经影像学习笔记！这份笔记记录了我的神经影像学习过程，希望对你有所帮助！
+欢迎来到我的神经影像学习笔记！这里记录了我的神经影像学习过程，希望对你有所帮助！
 
 .. toctree::
    :maxdepth: 2
@@ -18,10 +18,8 @@ LXG的神经影像学习笔记
 
    我的其他资料/zotero文献库
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
+   :caption: CSVD
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   CSVD/WMH-SynthSeg使用过程记录
