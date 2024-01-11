@@ -17,8 +17,9 @@ LXG的神经影像学习笔记
 
 .. toctree::
    :maxdepth: 2
+   :caption: Contents:
 
-   我的其他资料/index
+   我的其他资料/zotero文献库
 
 Indices and tables
 ==================
