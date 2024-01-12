@@ -93,7 +93,7 @@ File "/usr/local/freesurfer/7-dev/python/lib/python3.8/site-packages/torch/__ini
 Traceback (most recent call last): 
 File "/usr/local/freesurfer/7-dev/python/packages/WMHSynthSeg/inference.py", line 284, in <module> main() File "/usr/local/freesurfer/7-dev/python/packages/WMHSynthSeg/inference.py", line 76, in main import torch File "/usr/local/freesurfer/7-dev/python/lib/python3.8/site-packages/torch/__init__.py", line 234, in <module> _load_global_deps() File "/usr/local/freesurfer/7-dev/python/lib/python3.8/site-packages/torch/__init__.py", line 195, in _load_global_deps _preload_cuda_deps(lib_folder, lib_name) File "/usr/local/freesurfer/7-dev/python/lib/python3.8/site-packages/torch/__init__.py", line 160, in _preload_cuda_deps raise ValueError(f"{lib_name} not found in the system path {sys.path}") ValueError: libcublas.so.*[0-9] not found in the system path ['/usr/local/freesurfer/7-dev/python/packages/WMHSynthSeg', '/usr/local/freesurfer/7-dev/python/packages', '/usr/local/freesurfer/7-dev/python/lib/python38.zip', '/usr/local/freesurfer/7-dev/python/lib/python3.8', '/usr/local/freesurfer/7-dev/python/lib/python3.8/lib-dynload', '/usr/local/freesurfer/7-dev/python/lib/python3.8/site-packages']
 ```
-提示缺少`libcufft.so.11`和`libcublas.so.*[0-9]`库。进一步在Ubuntu 22.04中查看CUDA`nvcc --version`没有正常输出。不论是使用GPU还是CPU的指令应该都需要通过Pytorch加速，使用这个之前没有在WSL2中安装过CUDA和Pytorch，因此找教程从头安装。接下来主要参考的教程是[Windows 11/10 WSL2 Ubuntu 20.04 下配置Cuda及Pytorch](https://blog.csdn.net/iwanvan/article/details/122119595)，详细步骤如下：
+提示缺少`libcufft.so.11`和`libcublas.so.*[0-9]`库。进一步在Ubuntu 22.04中查看CUDA`nvcc --version`没有正常输出。不论是使用GPU还是CPU的指令应该都需要通过Pytorch加速，使用这个功能之前没有在WSL2中安装过CUDA和Pytorch，因此找教程从头安装。接下来主要参考的教程是[Windows 11/10 WSL2 Ubuntu 20.04 下配置Cuda及Pytorch](https://blog.csdn.net/iwanvan/article/details/122119595)，详细步骤如下：
 ###  （1）查看Windows物理机内的CUDA和WSL2中的CUDA
 ```
 PS C:\Users\Xiaog> nvidia-smi
@@ -344,5 +344,5 @@ Killed
 ```
 最后，我使用ADNI中一个被试的T1用GPU运行，可以正常出结果
 ![WMH-SynthSeg结果](WMH-SynthSeg_9.png)
-其它的一些注意事项，可以参照官方文档中的Q&A部分（[WMH-SynthSeg](https://surfer.nmr.mgh.harvard.edu/fswiki/WMH-SynthSeg)）
+其它的一些注意事项，可以参照官方文档中的Q&A部分（[WMH-SynthSeg](https://surfer.nmr.mgh.harvard.edu/fswiki/WMH-SynthSeg)）   
 **这两年Freesurfer更新的recon-all-clinic，包括SynthSeg，可以适用于临床序列，感觉对于自己的研究有很大的帮助！**
