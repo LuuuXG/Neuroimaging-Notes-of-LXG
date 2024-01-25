@@ -24,3 +24,9 @@ LXG的神经影像学习笔记
    :caption: CSVD
 
    CSVD/WMH-SynthSeg使用过程记录
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Imaging Transcriptomics
+
+   Imaging Transcriptomics/综述学习笔记
