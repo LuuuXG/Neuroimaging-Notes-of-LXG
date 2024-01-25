@@ -17,7 +17,7 @@ LXG的神经影像学习笔记
    :caption: 我的其他资料
 
    我的其他资料/zotero文献库
-   我的其它资料/zotero同步方案
+   我的其他资料/zotero同步方案
 
 .. toctree::
    :maxdepth: 2
