@@ -129,16 +129,13 @@ networks <https://www.science.org/doi/10.1126/science.1255905>`__ （但这篇�
 
 空间相近的区域各个指标的相关性会较高，因此增加了统计分析假阳性的概率。
 
-处理空间自相关的方法： - **model and remove the spatial dependence of
-the data：** 使用CGE时比较适用（region-by-region） - **spatially
-constrained null models：** - spatial permutation models & naive
-models：这两种都是非参数模型（nonparametric spatial permutation
-models），和下一种参数化模型相对。这种方法主要适用皮层数据，因为大脑皮层在这种方法中可以看成是球形，可以通过简单的旋转变化使得位置发生变化而距离依赖（distance-dependence）的特征不受到影响。因此，spatial
-permutation
-models的优势在于可以保留距离依赖的相关性，但缺点是不能用于皮层下的数据，另外由于内壁（medial
-wall）被旋转到了皮层，会产生缺失值（这里也不太理解）。这种方式的统估计相比非参数法更加保守。
-- parameterized data
-models：根据数据的空间自相关性，生成新的数据，基本保留了空间自相关性但随机化了形态特征（topography）
+处理空间自相关的方法： 
+
+- **model and remove the spatial dependence of the data：** 使用CGE时比较适用（region-by-region） 
+- **spatially constrained null models：** 
+
+  - spatial permutation models & naive models：这两种都是非参数模型（nonparametric spatial permutation models），和下一种参数化模型相对。这种方法主要适用皮层数据，因为大脑皮层在这种方法中可以看成是球形，可以通过简单的旋转变化使得位置发生变化而距离依赖（distance-dependence）的特征不受到影响。因此，spatial permutation models的优势在于可以保留距离依赖的相关性，但缺点是不能用于皮层下的数据，另外由于内壁（medial wall）被旋转到了皮层，会产生缺失值（这里也不太理解）。这种方式的统估计相比非参数法更加保守。
+  - parameterized data models：根据数据的空间自相关性，生成新的数据，基本保留了空间自相关性但随机化了形态特征（topography）
 
 --------------
 
