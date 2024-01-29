@@ -29,5 +29,4 @@ LXG的神经影像学习笔记
    :maxdepth: 2
    :caption: Imaging Transcriptomics
 
-   Imaging Transcriptomics/综述学习笔记
    Imaging Transcriptomics/综述学习笔记_new
