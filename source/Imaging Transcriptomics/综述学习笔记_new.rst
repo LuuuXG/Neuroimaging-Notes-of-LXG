@@ -85,12 +85,14 @@ schizophrenia <https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-023
    :alt: 研究结果
    :width: 500 px
 
+
 发现在SZ人群中，厚度变化和单核细胞基因的表达有关。具体看图(B)的第一幅（下方HC的图肉眼只能分辨出明显的32个数据点，不清楚为什么少2个），横坐标是厚度变化，纵坐标是基因表达，一共34个数据点，每一个数据点代表了1个皮层区域。
 
 .. image:: Imaging_Transcriptomics-3.png
    :align: center
    :alt: 研究结果
    :width: 350 px
+
 
 也有用 **偏最小二乘（PLS）** 的方法分析加权的基因表达（不太理解？）
 
