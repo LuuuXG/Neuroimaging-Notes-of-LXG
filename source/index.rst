@@ -31,9 +31,11 @@ LXG的神经影像学习笔记
 
    Imaging Transcriptomics/综述学习笔记_new
 
-   toctree::
+.. toctree::
    :maxdepth: 2
-   :caption: Network Neuroscience
+   :caption: 脑网络/Network Neuroscience
+
+测试
 
    Network Neuroscience/Graph Theory
    Network Neuroscience/Brain Network Communication
