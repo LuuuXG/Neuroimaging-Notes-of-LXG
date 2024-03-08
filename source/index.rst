@@ -35,7 +35,5 @@ LXG的神经影像学习笔记
    :maxdepth: 2
    :caption: 脑网络/Network Neuroscience
 
-测试
-
    Network Neuroscience/Graph Theory
    Network Neuroscience/Brain Network Communication
