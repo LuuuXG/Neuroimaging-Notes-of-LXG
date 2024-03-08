@@ -30,3 +30,10 @@ LXG的神经影像学习笔记
    :caption: Imaging Transcriptomics
 
    Imaging Transcriptomics/综述学习笔记_new
+
+   toctree::
+   :maxdepth: 2
+   :caption: Network Neuroscience
+
+   Network Neuroscience/Graph Theory
+   Network Neuroscience/Brain Network Communication
