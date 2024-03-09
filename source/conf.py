@@ -30,10 +30,10 @@ release = 'v1.0'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['recommonmark', 'sphinx_markdown_tables', 'myst_parser']
+extensions = ['sphinx_markdown_tables', 'myst_parser', ]
 
 myst_enable_extensions = [
-    "dollarmath"
+    "dollarmath",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
