@@ -5,3 +5,5 @@ Network Neuroscience
    :maxdepth: 2
 
    Brain Network Communication
+   Robustness and Resilience
+   qsiprep
