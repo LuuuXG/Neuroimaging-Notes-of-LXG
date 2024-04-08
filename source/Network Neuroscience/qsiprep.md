@@ -1,6 +1,6 @@
 QSIPrep使用过程记录
 ====================
-环境：Windows 10 + Docker Desktop + WSL2 Ubuntu22.04
+环境：Windows 10 + Docker Desktop + WSL2 Ubuntu22.04   
 数据：西门子DSI（DSI_Q4-Half_b4000_S6_fast）
 
 ## 前言

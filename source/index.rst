@@ -30,6 +30,7 @@ LXG的神经影像学习笔记
    :caption: Imaging Transcriptomics
 
    Imaging Transcriptomics/综述学习笔记_new
+   Imaging Transcriptomics/实践笔记
 
 .. toctree::
    :maxdepth: 2
