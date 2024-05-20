@@ -24,6 +24,7 @@ LXG的神经影像学习笔记
    :caption: CSVD
 
    CSVD/WMH-SynthSeg使用过程记录
+   CSVD/Bullseye Parcellation WMH
 
 .. toctree::
    :maxdepth: 2
