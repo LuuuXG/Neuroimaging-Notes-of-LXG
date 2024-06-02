@@ -3,9 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. meta::
-   :google-site-verification: <rivxpm8LJui26Rpe_SCbMWCwSdhg7dDlHZ43_VsKxk8>
-
 LXG的神经影像学习笔记
 ====================
 
