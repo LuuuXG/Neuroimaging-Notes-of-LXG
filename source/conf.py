@@ -66,3 +66,9 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 todo_include_todos = True
+
+html_context = {
+    "meta": {
+        "google-site-verification": "rivxpm8LJui26Rpe_SCbMWCwSdhg7dDlHZ43_VsKxk8"
+    }
+}
