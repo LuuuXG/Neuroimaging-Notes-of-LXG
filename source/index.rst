@@ -21,6 +21,12 @@ LXG的神经影像学习笔记
 
 .. toctree::
    :maxdepth: 2
+   :caption: Basic Imaging Process
+
+   Basic Imaging Process/图像配准
+
+.. toctree::
+   :maxdepth: 2
    :caption: CSVD
 
    CSVD/WMH-SynthSeg使用过程记录
@@ -32,6 +38,12 @@ LXG的神经影像学习笔记
 
    Imaging Transcriptomics/综述学习笔记_new
    Imaging Transcriptomics/实践笔记
+
+   .. toctree::
+   :maxdepth: 2
+   :caption: QSM
+
+   QSM/SEPIA使用过程记录
 
 .. toctree::
    :maxdepth: 2

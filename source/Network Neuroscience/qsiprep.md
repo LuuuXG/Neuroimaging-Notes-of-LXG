@@ -4,9 +4,16 @@ QSIPrep使用过程记录
 数据：西门子DSI（DSI_Q4-Half_b4000_S6_fast）
 
 ## 前言
+---
+
+2024-09-06：QSIprep将纤维重建部分单独分出来作为一个package，后续会重新再更新一下。 
+
+---
 正好最近在学习connectome相关的内容，阴差阳错尝试了QSIPrep，过程比想象中的顺利（因为到官方文档才知道QSIprep和ASLPrep是一个组做的，而之前尝试用ASLPrep一直没跑通）。
 
 另外我也尝试了用MRtrix3分析DSI数据，但似乎因为不是多壳（multi-shell）的（[[ERROR]: Not classified into shells](https://community.mrtrix.org/t/error-not-classified-into-shells/4006), [Error in dwipreproc eddy](https://community.mrtrix.org/t/error-in-dwipreproc-eddy/1164)），无法用MRtrix3进行预处理（参考的教程是[MRTRIX3系列教程](https://liaopan.github.io/mrtrix/)）。归根结底还是自己对Diffusion MRI的原理不甚了解:(
+
+Todo: 关于TOPUP和eddy校正的意义：https://neurostars.org/t/importance-for-reverse-acquisition-in-dti-preprocessing/17680
 
 ## BIDS format
 个人觉得QSIPrep的官方文档讲解的不是很详细。遇到的第一个问题就是反向b0文件应该放在哪个模态的文件夹中。在neurostars上查询了相关问题之后，应该是将反向b0放在`fmap`文件夹中。([Correctly structuring DWI data in BIDS](https://neurostars.org/t/correctly-structuring-dwi-data-in-bids/16506/1), [BIDS formatting of pepolar field maps for dwi](https://neurostars.org/t/bids-formatting-of-pepolar-field-maps-for-dwi/26041))。我准备了T1w，DSI和DSI b0三个数据。
