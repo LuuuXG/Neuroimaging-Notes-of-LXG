@@ -39,7 +39,7 @@ LXG的神经影像学习笔记
    Imaging Transcriptomics/综述学习笔记_new
    Imaging Transcriptomics/实践笔记
 
-   .. toctree::
+.. toctree::
    :maxdepth: 2
    :caption: QSM
 
