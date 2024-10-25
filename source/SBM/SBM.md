@@ -69,7 +69,7 @@ lh_thickness = nib.load(r'E:\Neuroimage\TestDataSet\FreeSurfer2HCP\sub-HC01.thic
 
 总之，最后得到的结果如图：
 
-![皮层厚度1](皮层厚度1.png)
+![皮层厚度1](CT1.png)
 
 上面的操作可能有更简单的操作过程（[Creating Cifti Thickness File from FreeSurfer Output](https://neurostars.org/t/creating-cifti-thickness-file-from-freesurfer-output/25272)），但由于时间关系没有深入学习。上面的文档还有转换label.gii和surf.gii的操作，这里只演示了转换func.gii的操作。
 
@@ -87,7 +87,7 @@ lh.inflated:visible=0 \
 --viewport 3d
 ```
 
-![皮层厚度2](皮层厚度2.png)
+![皮层厚度2](CT2.png)
 
 （2）使用mris_convert的结果
 
@@ -98,7 +98,7 @@ mris_convert -c lh.thickness lh.white lh.thickness.func.gii
 
 同样用workbench查看：
 
-![皮层厚度3](皮层厚度3.png)
+![皮层厚度3](CT3.png)
 
 ### 2. 使用neuromaps转换空间
 
@@ -111,7 +111,7 @@ mri_surf2surf --srcsubject sub-HC01 --trgsubject fsaverage \
 --hemi lh --srcsurfval thickness --src_type curv --trgsurfval sub-HC01.lh.thickness_fsaverage.func.gii
 ```
 
-![皮层厚度4](皮层厚度4.png)
+![皮层厚度4](CT4.png)
 
 （2）使用用于组分析的-qcache命令
 
@@ -119,7 +119,7 @@ mri_surf2surf --srcsubject sub-HC01 --trgsubject fsaverage \
 recon-all -s sub-HC01 -qcache
 ```
 
-![皮层厚度5](皮层厚度5.png)
+![皮层厚度5](CT5.png)
 
 ## FreeSurfer
 
@@ -127,9 +127,9 @@ recon-all -s sub-HC01 -qcache
 
 上面两者应该是一致的。使用第一个.func.gii文件利用neuromaps进行空间转换。
 
-![皮层厚度6](皮层厚度6.png)
+![皮层厚度6](CT6.png)
 
-![皮层厚度7](皮层厚度7.png)
+![皮层厚度7](CT7.png)
 
 这里第一张是之前用workbench转换得到的结果，第二张是用neuromaps转换的结果。可以看到结果确实相近。
 
