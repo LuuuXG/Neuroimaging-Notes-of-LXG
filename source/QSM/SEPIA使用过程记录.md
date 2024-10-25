@@ -1,8 +1,8 @@
 # SEPIA使用过程记录
 
-[SEPIA](https://sepia-documentation.readthedocs.io/en/latest/index.html)
+写在前面：最开始看到SEPIA似乎是在一篇DTI ALPS的文章中提到了处理QSM使用的[SEPIA](https://sepia-documentation.readthedocs.io/en/latest/index.html)。我也用过其它的工具包，比如[STI Suite](https://chunleiliulab.github.io/software.html)和[IronSmith](https://github.com/vzachari/IronSmithQSM)，但在处理我手上GE数据的时候都遇到一点问题（前者导入nii文件时有问题，后者安装需要singularity有点麻烦，比较有意思的是提供了配准QSM图到MNI152空间的操作，但在我的数据上效果不好，不知道是为什么），自己没有办法解决。SEPIA的话使用比较方便，也包含了前两者的处理算法。
 
-安装过程参照文档提示。但由于是Windows环境下的matlab，没有找到指定ANTs路径的方法，但对后续的基础QSM分析没有影响。
+安装过程参照文档提示。**注意**：如果是Windows环境下的matlab，就没有办法指定ANTs的路径，但对后续的QSM（以及R2star mapping和SWI）处理没有影响；为了尝试Analysis模块的功能，需要一个Linux环境的matlab（我在网上搜了一些WSL2安装matlab的教程，但操作下来发现就按照一般的Linux系统的matlab安装教程和相应的软件资源就可以了）。
 
 ![Dependency](SEPIA-1.png)
 
@@ -24,7 +24,7 @@
 
 ### 数据准备：
 
-我下载的版本并没有找到教程中提到的`sepia101_data`示例数据，于是采用自己的研究数据。数据准备参照[Data Preparation](https://sepia-documentation.readthedocs.io/en/latest/getting_started/Data-preparation.html)。为了方便先尝试SEPIA自己的格式，其中需要注意的是用MRIcroGL dcm2niix GUI转换的-m参数在左下角设置。使用dcm2niix后再用fslmerge命令分别将各个echo的幅度图和相位图合成一个。
+我下载的版本并没有找到教程中提到的`sepia101_data`示例数据，于是采用自己的研究数据。数据准备参照[Data Preparation](https://sepia-documentation.readthedocs.io/en/latest/getting_started/Data-preparation.html)。为了方便先尝试SEPIA自己的格式，其中需要注意的是用MRIcroGL dcm2niix GUI转换的-m参数在左下角设置。使用dcm2niix后再用fslmerge命令分别将各个echo的幅度图和相位图合成一个。（补：SEPIA也支持BIDS格式，但关于QSM序列的magnitude和phase图应该放在哪个文件夹（似乎应该放在fieldmap）、按照什么格式还不太清楚，另外用BIDS格式作为输入，SEPIA也会先转成SEPIA自己的格式，时间会长一些，需要自己取舍）
 
 ![dcm2niix](SEPIA-3.png)
 
@@ -52,3 +52,15 @@
 
 两种方式处理结果相同：
 ![alt text](image.png)
+
+## Analysis模块
+
+这一部分的处理是获得被试个体空间的几个atlas（将标准空间的atlas配准到个体空间）。**接下来的操作都是在Linux中的matlab中进行的**。
+
+### 准备工作
+
+**下载Atlas**：根据官方教程，有一个脚本用于下载图谱的信息。国内如果报错的话可以自己打开脚本，按照里面的网址下载，放在SEPIA目录下的Analysis文件夹即可。
+
+**设置ANTs路径**：下载ANTs，按照要求设置ANTs的路径。我第一次用matlab提示有C++相关库的问题。
+
+### 运行

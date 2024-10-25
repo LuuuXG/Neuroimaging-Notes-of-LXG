@@ -27,6 +27,12 @@ LXG的神经影像学习笔记
 
 .. toctree::
    :maxdepth: 2
+   :caption: VBM/SBM
+
+   SBM/SBM
+
+.. toctree::
+   :maxdepth: 2
    :caption: CSVD
 
    CSVD/WMH-SynthSeg使用过程记录
@@ -44,6 +50,12 @@ LXG的神经影像学习笔记
    :caption: QSM
 
    QSM/SEPIA使用过程记录
+
+.. toctree::
+   :maxdepth: 2
+   :caption: fMRI
+
+   fMRI/fMRI预处理
 
 .. toctree::
    :maxdepth: 2
