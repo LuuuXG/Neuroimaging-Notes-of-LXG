@@ -1,7 +1,7 @@
-BIDS
+cvdproc
 ========================
 
 .. toctree::
    :maxdepth: 2
 
-   dcm2bids
+   quick_start

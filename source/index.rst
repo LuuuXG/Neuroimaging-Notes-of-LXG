@@ -21,9 +21,17 @@ LXG的神经影像学习笔记
 
 .. toctree::
    :maxdepth: 2
+   :caption: CVDProc Documentation
+
+   cvdproc/quick_start
+
+.. toctree::
+   :maxdepth: 2
    :caption: Basic Imaging Process
 
    Basic Imaging Process/图像配准
+   Basic Imaging Process/空间模板
+   Basic Imaging Process/dcm2bids
 
 .. toctree::
    :maxdepth: 2

@@ -1,11 +1,15 @@
 # Bullseye Parcellation WMH使用过程记录
 
+## 前言
+
 参考：
 
 - 文档说明：[bullseye parcellation of the cerebral white matter with FreeSurfer](https://gsanroma.github.io/posts/2019/06/bullseye-parcellation/)
 - 代码：[bullseye pipeline](https://github.com/gsanroma/bullseye_pipeline)
 
 ---
+
+## 准备工作
 
 可能需要修改的地方（Ubuntu 22.04 + Freesurfer 7）：
 
@@ -22,3 +26,8 @@
   ```u2 = int(u2)```
   以去除小数。
 
+## 运行
+
+时隔一段时间，发现重新安装实在是困难（python2.7早已经被弃用，相应的依赖版本也已经太老），所以可以按照上面的修改修改文件夹内的源文件（但不用修改`from utils import *`），然后直接调用run_bullseye_pipeline.py这个脚本文件，而不按照官方文档安装。
+
+经过测试可以适用于Freesurfer 8.0.0-beta的输出（官方文档中测试于Freesurfer 6，但依赖的那些文件应该是各个版本都有的）

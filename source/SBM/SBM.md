@@ -50,7 +50,7 @@ mris_convert -c lh.thickness lh.white lh.thickness.func.gii
 wb_command -metric-resample /mnt/e/Neuroimage/TestDataSet/FreeSurfer2HCP/lh.thickness.func.gii /mnt/e/Neuroimage/TestDataSet/FreeSurfer2HCP/lh.sphere.reg.surf.gii /mnt/g/CBIG-master/data/templates/surface/standard_mesh_atlases_20170508/resample_fsaverage/fs_LR-deformed_to-fsaverage.L.sphere.32k_fs_LR.surf.gii ADAP_BARY_AREA /mnt/e/Neuroimage/TestDataSet/FreeSurfer2HCP/sub-HC01.thickness.lh.32k_fs_LR.func.gii -area-surfs /mnt/e/Neuroimage/TestDataSet/FreeSurfer2HCP/lh.midthickness.surf.gii /mnt/e/Neuroimage/TestDataSet/FreeSurfer2HCP/sub-HC01.lh.midthickness.32k_fs_LR.surf.gii
 ```
 
-最后生成了`sub-HC01.thickness.lh.32k_fs_LR.func.gii`文件。然后依次打开.surf.gii和.func.gii就可以在workbench中查看了。
+最后生成了`sub-HC01.thickness.lh.32k_fs_LR.func.gii`文件。然后依次打开.surf.gii和.func.gii就可以在workbench中查看了（这里的.surf.gii是midthickness，用fsLR的标准pial surface也是可以的）。
 
 ![缺少头文件](warning.png)
 
@@ -131,7 +131,7 @@ recon-all -s sub-HC01 -qcache
 
 ![皮层厚度7](CT7.png)
 
-这里第一张是之前用workbench转换得到的结果，第二张是用neuromaps转换的结果。可以看到结果确实相近。
+这里第一张是之前用workbench转换得到的结果，第二张是用neuromaps转换的结果。可以看到结果确实相近。但具体应该用哪个我不太清楚。
 
 ## FastSurfer
 

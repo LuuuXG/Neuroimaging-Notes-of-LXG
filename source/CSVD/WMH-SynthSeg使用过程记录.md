@@ -4,6 +4,8 @@
 本地环境：**Windows10** + **WSL2** + **Ubuntu 22.04**  
 时间：2024-01-07
 
+2024-11-15补：因为涉及到更新Freesurfer 8.0.0-beta版本，要重新安装WMH-SynthSeg，发现之前的操作还是有一些问题，比如选择了root用户，没有指定环境。
+
 ## Step 1：选择合适的Freesurfer7的开发版本
 根据此时Freesurfer的官方说明（[WMH-SynthSeg](https://surfer.nmr.mgh.harvard.edu/fswiki/WMH-SynthSeg)），WMH-SynthSeg只能通过开发版本使用。下面是开发版本的安装过程：
 
@@ -255,7 +257,7 @@ NOTE: The CUDA Samples are not meant for performance measurements. Results may v
 
 Test passed
 ```
-最后Test passed说明没有正常
+最后Test passed说明没有异常
 
 ### （5）配置Pytorch
 Pytorch的官方网站：[START LOCALLY](https://pytorch.org/get-started/locally/)。如图选择
