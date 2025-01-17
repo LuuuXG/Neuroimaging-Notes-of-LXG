@@ -24,6 +24,7 @@ LXG的神经影像学习笔记
    :caption: CVDProc Documentation
 
    cvdproc/quick_start
+   cvdproc/pipelines
 
 .. toctree::
    :maxdepth: 2
