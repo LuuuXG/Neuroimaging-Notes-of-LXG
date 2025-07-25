@@ -21,15 +21,9 @@ LXG的神经影像学习笔记
 
 .. toctree::
    :maxdepth: 2
-   :caption: CVDProc Documentation
-
-   cvdproc/quick_start
-   cvdproc/pipelines
-
-.. toctree::
-   :maxdepth: 2
    :caption: Basic Imaging Process
 
+   Basic Imaging Process/WSL使用注意
    Basic Imaging Process/图像配准
    Basic Imaging Process/空间模板
    Basic Imaging Process/dcm2bids
@@ -53,6 +47,15 @@ LXG的神经影像学习笔记
 
    Imaging Transcriptomics/综述学习笔记_new
    Imaging Transcriptomics/实践笔记
+
+.. toctree::
+   :maxdepth: 2
+   :caption: dMRI
+
+   dMRI/dti
+   dMRI/qsiprep
+
+   dMRI/SEPIA使用过程记录
 
 .. toctree::
    :maxdepth: 2

@@ -67,3 +67,5 @@ mri_concat --combine $SUBJECTS_DIR/sub-JS_test/mri/lh.ribbon.mgz $SUBJECTS_DIR/s
 flirt -in cortex.nii.gz -ref dti_FA.nii.gz -applyxfm -init freesurfer2fa.mat -out cortex_diff.nii.gz -interp nearestneighbour
 
 ```
+
+关于FSL并行的问题：https://neurostars.org/t/fsl-dual-regression-error/27704/3

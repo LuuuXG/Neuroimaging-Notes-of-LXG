@@ -6,4 +6,3 @@ Network Neuroscience
 
    Brain Network Communication
    Robustness and Resilience
-   qsiprep
