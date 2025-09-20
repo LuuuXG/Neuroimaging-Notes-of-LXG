@@ -23,6 +23,8 @@ Slice timing的问题可以参照这篇文章[Slice-timing effects and their cor
 
 mark：[High-pass filter and ICA-AROMA on multiband-data](https://neurostars.org/t/high-pass-filter-and-ica-aroma-on-multiband-data/21332/2)（我似乎用不到ICA，但是里面对于slice和volume的含义和ICA-AROMA的意义可能可以借鉴）
 
+fmriprep使用session的freesurfer结果：[Can fMRIPrep use session specific freesurfer output to preprocess multiple sessions per subject?](https://neurostars.org/t/can-fmriprep-use-session-specific-freesurfer-output-to-preprocess-multiple-sessions-per-subject/4644)，但里面提到的[Enable longitudinal structural analysis](https://github.com/nipreps/smriprep/issues/429)似乎目前为止还没有解决。
+
 fMRIPrep的教程：参考了视频[fMRIPrep_Tutorial](https://www.bilibili.com/video/BV19P4y1t7Gh/?spm_id_from=333.337.search-card.all.click&vd_source=262636e26b325960a8c21f8bb6b74f08)
 
 fMRIPrep的默认参数是可以正确地处理multiband fMRI的STC的（只要没有大量的头动和伪影），也不会有负面的影响（[Slice time correction with multiband/short TR](https://neurostars.org/t/slice-time-correction-with-multiband-short-tr/24500)）。

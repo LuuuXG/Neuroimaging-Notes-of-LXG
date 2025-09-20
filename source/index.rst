@@ -30,6 +30,12 @@ LXG的神经影像学习笔记
 
 .. toctree::
    :maxdepth: 2
+   :caption: freesurfer
+
+   freesurfer/各解剖结构亚区分割
+
+.. toctree::
+   :maxdepth: 2
    :caption: VBM/SBM
 
    SBM/SBM
@@ -54,6 +60,7 @@ LXG的神经影像学习笔记
 
    dMRI/dti
    dMRI/qsiprep
+   dMRI/tck_space
 
    dMRI/SEPIA使用过程记录
 

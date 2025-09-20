@@ -69,3 +69,10 @@ flirt -in cortex.nii.gz -ref dti_FA.nii.gz -applyxfm -init freesurfer2fa.mat -ou
 ```
 
 关于FSL并行的问题：https://neurostars.org/t/fsl-dual-regression-error/27704/3
+
+
+纤维束提值：
+
+https://community.mrtrix.org/t/how-to-extract-fa-value-from-extracted-fibers/4497
+
+https://community.mrtrix.org/t/fa-value-from-tck-file/2719/4
