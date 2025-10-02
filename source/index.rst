@@ -60,6 +60,7 @@ LXG的神经影像学习笔记
 
    dMRI/dti
    dMRI/qsiprep
+   dMRI/qsiprep2
    dMRI/tck_space
 
    dMRI/SEPIA使用过程记录
@@ -80,7 +81,6 @@ LXG的神经影像学习笔记
    :maxdepth: 2
    :caption: 脑网络/Network Neuroscience
 
-   Network Neuroscience/qsiprep
    Network Neuroscience/Graph Theory
    Network Neuroscience/Brain Network Communication
    Network Neuroscience/Robustness and Resilience

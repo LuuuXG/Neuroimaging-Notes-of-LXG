@@ -144,3 +144,61 @@ sudo chmod a+r /usr/local/cuda-12.3/lib64/libcudnn*
 ```
 
 之后应该可以正常使用了。
+
+## WSL安装matlab
+
+参考Linux下安装matlab的步骤（一般是把iso文件挂载到WSL，然后运行安装文件）
+
+如果出现glib/pango库的问题（注意替换为matlab安装包的路径）：
+
+```bash
+./install terminate called after throwing an instance of 'std::runtime_error' what(): Unable to launch the MATLABWindow application
+```
+
+可以通过运行./MATLABWindow来查看具体错误
+
+```bash
+cd ~/matlab_installer/bin/glnxa64
+
+./MATLABWindow -url=mathworks.com ./MATLABWindow: symbol lookup error: /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_name
+```
+
+Mathwork官网提供了解决方案：https://www.mathworks.com/matlabcentral/answers/364551-why-is-matlab-unable-to-run-the-matlabwindow-application-on-linux
+
+如果无法解决库冲突的问题，可以尝试silent安装：
+
+安装包文件夹下存在`installer_input.txt`模板文件，可以修改其中的注释掉的内容指定安装步骤，例如不安装额外包的话，可以指定：
+
+```
+##################################################################
+## MATLAB Silent Installation Config (R2020a)
+##################################################################
+
+## 安装目录
+destinationFolder=/usr/local/MATLAB/R2020a
+
+## 使用的 File Installation Key
+fileInstallationKey=09806-07443-53955-64350-21751-41297
+
+## 接受许可证协议
+agreeToLicense=yes
+
+## 输出日志文件（可选）
+outputFile=/tmp/matlab_install.log
+```
+
+## WSL使用GUI
+
+Windows下安装[VcXsrv](https://sourceforge.net/projects/vcxsrv/)，按照默认配置安装后，桌面会出现XLaunch的快捷方式，双击打开选择One large window, Display number选择0，后面有一个界面选择disable access control。
+
+![GUI 1](WSLGUI1.png)
+
+![GUI 2](WSLGUI2.png)
+
+之后在WSL设置环境变量：
+
+```bash
+export DISPLAY=localhost:0
+```
+
+可通过`xclock`测试是否能打开图形化界面
